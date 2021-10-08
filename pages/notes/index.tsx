@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-interface OwnProps {}
-
-type Props = OwnProps;
+type Props = void;
 
 const NotesPage: FunctionComponent<Props> = (props) => {
   return <h4>Hello notes</h4>;
