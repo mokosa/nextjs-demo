@@ -4,15 +4,12 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "next/core-web-vitals"
+    "next"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "prefer-const": "error",
-    "sort-imports": "error",
     "semi": "error"
   }
 }

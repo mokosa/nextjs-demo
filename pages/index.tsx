@@ -2,8 +2,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import styles from '../styles/Home.module.css';
+import { useRouter } from 'next/router';
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,11 +16,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <button onClick={() => router.push('/notes')}>Notes</button>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!
-        </a> edit
+          Welcome to <a href="https://nextjs.org">Next.js!</a> edit
         </h1>
-
 
         <p className={styles.description}>
           Get started by editing{' '}
